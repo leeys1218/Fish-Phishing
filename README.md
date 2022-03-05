@@ -1,8 +1,4 @@
-# Hanium_project
-This project is chrome extention program
-
-it checks whether url is a phishing site or not By trained ML model
-
+READ ME
 
 YOU NEED TO PYTHON
 
