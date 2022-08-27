@@ -8,6 +8,11 @@ h1 {
     font-size: 20px;
 }
 
+div {
+    font-family: 'Stylish', sans-serif;
+    font-size: 20px;
+}
+
 img {
     size: 10px;
 }

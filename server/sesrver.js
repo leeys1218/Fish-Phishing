@@ -6,11 +6,11 @@ var app = http.createServer(function(request, response){
 
     let _url = request.url
     let target_url = url.parse(_url, true).query.target;
+    console.log(target_url);
 
     let parsed = '{"target_url": "'+ target_url + '",';
 
     const result = spawn('python', ['MLP_model.py', target_url]);
-
     result.stdout.on('data', (result) => {
         parsed += result.toString();
         

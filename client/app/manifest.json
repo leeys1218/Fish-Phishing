@@ -5,15 +5,14 @@
 
     "action": { 
         "default_popup": "popup.html",
-        "default_icon": "/image/icon.png"
+        "default_icon": "image/icon.png"
     },
 
     "permissions": [
-        "tabs",
         "activeTab",
-        "scripting",
-        "cookies",
-        "declarativeContent",
-        "storage"
-     ]
+        "tabs"
+    ],
+    "host_permissions": [
+        "http://localhost:3000/"
+    ]
 }
