@@ -10,7 +10,7 @@ chrome.tabs.query({ currentWindow: true, active: true }, function(tabs){
         info.appendChild(infoText)
         info.onclick = function(){
             var list = document.querySelector("#list")
-            list.innerHTML += "<정상: 1, 비정상: 0><br><br>"
+            list.innerHTML += "<정상: 1, 의심: 0, 비정상: -1><br>"
             list.innerHTML += "url 주소 길이: " + resJson.Check_URLLength + "<br>"
             list.innerHTML += "url 심볼 포함 여부: " + resJson.Check_Symbol + "<br>"
             list.innerHTML += "도메인 등록 기간: " + resJson.Check_RegiLength + "<br>"
@@ -24,7 +24,7 @@ chrome.tabs.query({ currentWindow: true, active: true }, function(tabs){
             document.getElementsByTagName("h1")[0].innerHTML = "이 사이트는 안전해요!";
             return document.getElementById("image").src="image/isnotPhishing.png"       
         }
-        else if (resJson.isbenign == '0'){
+        else if (resJson.isbenign == '-1' || resJson.isbenign == '0'){
             document.getElementsByTagName("h1")[0].innerHTML = "이 사이트는 위험합니다!";
             return document.getElementById("image").src="image/isPhishing.png"
         }
