@@ -3,7 +3,6 @@
 #### Project title : Fish-Phishing
 #### Project period : 2021.05 ~ 2021.11
 #### Git Lab : https://lab.hanium.or.kr/21_HF089/server_test
-#### Developer : 김의진, 이연상
 -----------------------
 ## Description
 이 프로그램은 Phishing site의 탐지와 더불어 그 결과를 간편하게 시각적으로 제공하여 개인의 사이버 보안을 도와주는 프로그램입니다.
