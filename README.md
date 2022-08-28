@@ -4,7 +4,12 @@
 #### Project period : 2021.05 ~ 2021.11
 -----------------------
 ## Description
+이 프로그램은 Phishing site의 탐지와 더불어 그 결과를 간편하게 시각적으로 제공하여 개인의 사이버 보안을 도와주는 프로그램입니다.
 
+Data Base에 없어도 Phishing Site의 예측이 가능하도록 머신러닝 모델에 기반한 실시간으로 Phishing Site의 패턴을 탐지합니다.
+
+- Phishing Site들이 가지고 있는 특징, 패턴을 조사하여 label로 추출할 수 있는 python 코드 구현.
+- Classification이 가능한 머신러닝 알고리즘을 구현하여 특정 label로 추출한 특징을 기반으로 분류할 수 있도록 모델 구축.
 
 ### 실행 화면
 > 추가된 확장 프로그램 및 실행 후 로딩
@@ -26,6 +31,20 @@
 > ![image](https://user-images.githubusercontent.com/95534831/187037277-fccda3e3-5a99-41ad-895c-ebfb70eebf87.png)
 
 (백신 프로그램인 안랩과 동일한 결과)
+
+
+### 서비스 시나리오
+![image](https://user-images.githubusercontent.com/95534831/187056854-6d10f830-8491-4dbf-ab60-247f17342190.png)
+
+#### Front End
+
+사용자가 입력한 URL을 서버에 전송한다.
+서버에서 받아온 해당 URL의 정보를 클라이언트에게 제공한다.
+
+#### Back End
+
+사용자가 보낸 URL을 학습된 모델을 통해 해당 URL이 피싱사이트 인지 판단하고 이를 클라이언트에게 전송한다.
+해당 URL의 ip주소, 인증서 정보등 기타 정보들을 클라이언트에게 전송한다.
 
 
 ## Run
