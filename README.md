@@ -2,18 +2,13 @@
 # 머신러닝을 활용한 Phishing Site(피싱 사이트) 사전 탐지 프로그램
 #### Project title : Fish-Phishing
 #### Project period : 2021.05 ~ 2021.11
-#### Git Lab : https://lab.hanium.or.kr/21_HF089/server_test
 #### 인하대학교 김의진 이연상
 -----------------------
 ## Description
 이 프로그램은 Phishing site의 탐지와 더불어 그 결과를 간편하게 시각적으로 제공하여 개인의 사이버 보안을 도와주는 프로그램입니다.
 
-Data Base에 없어도 Phishing Site의 예측이 가능하도록 머신러닝 모델에 기반한 실시간으로 Phishing Site의 패턴을 탐지합니다.
-
-- Phishing Site들이 가지고 있는 특징, 패턴을 조사하여 label로 추출할 수 있는 python 코드 구현.
-- Classification이 가능한 머신러닝 알고리즘을 구현하여 특정 label로 추출한 특징을 기반으로 분류할 수 있도록 모델 구축.
-
-위의 두가지 목표를 개발 방향으로 설정하여 Phishing Site의 url로 분석할 수 있는 12가지 특징을 파이썬 함수로 추출하였고, url과 해당 url에서 추출한 특징들을 머신러닝 모델에 학습시켜 새로운 url에 대한 Phishing Site 여부를 예측 가능하게 했습니다.
+- Phishing Site의 url로 분석할 수 있는 12가지 특징을 파이썬 함수로 추출
+- Classification이 가능한 머신러닝 알고리즘을 구현하여 특정 label로 추출한 특징을 기반으로 분류할 수 있도록 모델 구축
 
 <br>
 
